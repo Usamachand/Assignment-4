@@ -1,0 +1,119 @@
+
+import 'dart:io';
+import 'dart:collection';
+
+void main() {
+  
+//Question # 01
+
+   List<String> arr = ['Bilal','Bilal','Bilal','Owais','Owais'];
+  List<String> result = Set<String>.from(arr).toList();
+  print(result); 
+
+//Question # 02
+
+ List numlist = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+
+
+  List evenList = [];
+  List firstEven = [];
+
+  for (final i in numlist) {
+    if (i.isEven) {
+      evenList.add(i);
+    }
+  }
+  firstEven.addAll(evenList);
+  print(firstEven);
+
+  //Question # 03
+
+int num = 3;
+for (int index = 2; index <= num /2; ++index) {
+if (num % index == 0) {
+  print("given number is not prime");
+}else{
+
+}print("given number is a prime");
+}
+//Question # 05
+
+ var fruits =[
+    "Apple",
+    "Mango",
+    "Orange",
+    "Banana",
+    "Strawberry"
+   
+  ];
+
+  for (int i = 0; i < fruits.length; i++) {
+    print(fruits[i]);
+  }
+
+// Question # 6
+List vowel = ["a", "e", "i", "o", "u"];
+if ((vowel == 'a,e,i,o,u' && vowel == 'a,e,i,o,u')) {
+  print(true);
+}else if ((vowel !='a,e,i,o,u' && vowel != 'a,e,i,o,u')) {
+  print(false);
+}
+// Question # 09
+
+var name = ("natsikaP nawaj");
+print(name.split('').reversed.join());
+
+// Question # 10
+
+   List<String> aff = ['Ahmed','Bilal', 'Muhammad', 'Owais','Muhammad', 'Ali', 'Ahmed'];
+  List<String> set = Set<String>.from(aff).toList();
+  print(set);
+
+//Question # 13
+
+var List2 = [11, 12, 133, 14, 34, 65, 77, 35, 98, 2, 7,];
+    
+  // Declaring and assigning the
+  // largestValue and smallestValue
+  var largestValue = List2[0];
+  var smallestValue = List2[0];
+  
+  for (var i = 0; i < List2.length; i++) {
+      
+    // Checking for largest value in the list
+    if (List2[i] > largestValue) {
+      largestValue = List2[i];
+    }
+      
+    // Checking for smallest value in the list
+    if (List2[i] < smallestValue) {
+      smallestValue = List2[i];
+    }
+  }
+  
+  // Printing the values
+  print("Smallest value in the list : $smallestValue");
+  print("Largest value in the list : $largestValue");
+
+
+
+ 
+
+
+ var sum = 0;
+  var given_list = [1,2,3,4,5,6,7,8];
+  for (var i = 0 ; i< given_list.length; ++i) {
+  var given_list2 = given_list;
+  sum += given_list2[i];
+  }    
+print('for loop :${sum}');
+
+
+var sum1 = 0;
+var list5 = [1,2,3,4];
+for (var i = 0; i < list5.length; i++) {
+  sum1 += list5[i];
+}
+print('loop 2 : ${sum1}');
+}
+
